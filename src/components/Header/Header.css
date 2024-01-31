@@ -1,7 +1,38 @@
-header{}
+header{
+    height: 10vh;
+    line-height: 10vh;
+}
 
-header .container{}
+header .container{
+    padding-top: 15px;
+}
 
-header ul li{}
+header ul li{
+    margin-left: 30px;
+}
 
-header ul li a{}
+header ul li a{
+    transition: 0.5s;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    letter-spacing: normal;
+}
+
+header ul li a:hover{
+    color: var(--primaryColor);
+}
+
+.home-btn{
+    cursor: pointer;
+    color: var(--mainBlack);
+    padding: 18px 25px;
+    height: fit-content;
+    transition: var(--mainTransition);
+    border-radius: 6px;
+}
+
+.home-btn {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  }

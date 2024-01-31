@@ -1,6 +1,10 @@
 import React from 'react'
 import './Header.css'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
+
+
 const Header = () => {
     return (
         <>
@@ -9,20 +13,22 @@ const Header = () => {
                     <div className='logo'>
                         <img src='' alt='' />
                     </div>
-                    <ul className='link f_flex uppercase'>
-                        <li><a href='#home'>home</a></li>
-                        <li><a href='#features'>features</a></li>
-                        <li><a href='#portfolio'>portfolio</a></li>
-                        <li><a href='#resume'>resume</a></li>
-                        <li><a href='#clients'>clients</a></li>
-                        <li><a href='#blog'>blog</a></li>
-                        <li><a href='#contact'>contact</a></li>
-                        <li><button className='home-btn'>BUY NOW</button></li>
-                    </ul>
-                    <button className='toggle'>
-                    <i class="fa-regular fa-rectangle-xmark"></i>
+                    <div className='navLink'>
+                        <ul className='link f_flex uppercase'>
+                            <li><a href='#home'>home</a></li>
+                            <li><a href='#features'>features</a></li>
+                            <li><a href='#portfolio'>portfolio</a></li>
+                            <li><a href='#resume'>resume</a></li>
+                            <li><a href='#clients'>clients</a></li>
+                            <li><a href='#blog'>blog</a></li>
+                            <li><a href='#contact'>contact</a></li>
+                            <li><button className='home-btn'>BUY NOW</button></li>
+                        </ul>
+                        <button className='toggle'>
+                            <FontAwesomeIcon icon={faXmark} />
+                        </button>
+                    </div>
 
-                    </button>
                 </div>
             </header>
         </>
