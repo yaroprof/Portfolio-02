@@ -1,0 +1,30 @@
+.features .box{
+    padding: 50px;
+
+}
+
+.features .box h2{
+    margin: 20px 0 20px 0;
+}
+
+.features .box p{
+    word-spacing: 2px;
+    transition: 0.5s;
+}
+
+.features .box i{
+    font-size: 2rem;
+    margin-top: 20px;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.features .box:hover p{
+    color: var(--mainWhite);
+}
+
+.features .box:hover i{
+    color: var(--mainWhite);
+    opacity: 1;
+}
+
